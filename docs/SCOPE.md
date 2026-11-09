@@ -43,4 +43,6 @@ Each candidate must be checked against existing representation-engineering, acti
 
 ## Decisions still open
 
-Repository owner and visibility; final title; venue/template; author list; whether 20–30 pages includes references; whether optional experiments materially improve the survey. No new experiment is mandatory at this stage.
+Final title; venue/template; author list; whether 20–30 pages includes references; whether optional experiments materially improve the survey. No new experiment is mandatory at this stage.
+
+Repository decision: public, `emecii/weight-space-programming-survey`, authorized by the user on 2026-11-08.

@@ -40,4 +40,4 @@ Language and embodied models are application domains, not additional optimizatio
 
 ## Current limits
 
-The outline, English manuscript language, and page accounting are working assumptions. No venue, author list, license, or publication-readiness claim has been set. No third-party PDFs or private chat screenshots are redistributed. GitHub destination and visibility are pending the repository owner's choice.
+The outline, English manuscript language, and page accounting are working assumptions. No venue, author list, license, or publication-readiness claim has been set. No third-party PDFs or private chat screenshots are redistributed. The user authorized a public repository at https://github.com/emecii/weight-space-programming-survey on 2026-11-08.

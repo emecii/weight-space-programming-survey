@@ -26,7 +26,7 @@ Use the outline as a provisional budget. Verify references and claim support, ch
 
 ## 5. GitHub delivery
 
-Prepare a dedicated repository, never publish the parent workspace. Proposed contents: README, scope/outline/protocol, curated bibliography/matrix, manuscript sources, editable figures, compiled PDF when available. Publish only project-owned content and links to third-party sources. Repository owner/visibility are pending. Do not assign authors, a license, or an affiliation without an author decision.
+Prepare a dedicated repository, never publish the parent workspace. Proposed contents: README, scope/outline/protocol, curated bibliography/matrix, manuscript sources, editable figures, compiled PDF when available. Publish only project-owned content and links to third-party sources. Repository destination: `emecii/weight-space-programming-survey`, public, authorized 2026-11-08. Do not assign authors, a license, or an affiliation without an author decision.
 
 ## Completion criteria
 
@@ -36,4 +36,4 @@ Prepare a dedicated repository, never publish the parent workspace. Proposed con
 - References, claims and tables have been checked; limitations and incomparable metrics are explicit.
 - GitHub remote exists and files are verified there; report the exact URL and version.
 
-Current state: scope and outline prepared; seed sources collected; no manuscript, experiments, or published GitHub repository yet.
+Current state: scope and outline prepared; seed sources collected; no manuscript or experiments yet. Initial planning files are prepared for the authorized public GitHub repository.
