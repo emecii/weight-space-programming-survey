@@ -1,0 +1,11 @@
+id,title,url,branch,verification_status,notes
+wsp,Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights,https://rikiyat.github.io/blog/weight-space-programming/,weight programming,author blog; selected text checked in conversation,early results; not a survey
+steeract,SteerAct: Unlocking Action Models through Few-Shot Temporal Steering,https://arxiv.org/abs/2610.25632,embodied steering,abstract and selected HTML passages checked,full method/evidence extraction pending
+steerscope,Does Steering Break Your Model? A Multi-Dimensional Evaluation Suite for LLM Steering Methods,https://arxiv.org/abs/2610.07722,steering evaluation,abstract and selected HTML passages checked,benchmark findings limited to evaluated settings
+wsl-survey,"A Survey of Weight Space Learning: Understanding, Representation, and Generation",https://arxiv.org/abs/2603.10090,prior survey,abstract metadata checked,full-text overlap coding pending
+repe-survey-1,Representation Engineering for Large-Language Models: Survey and Research Challenges,https://arxiv.org/abs/2502.17601,prior survey,search-result title checked,full text pending
+repe-survey-2,"Taxonomy, Opportunities, and Challenges of Representation Engineering for Large Language Models",https://arxiv.org/abs/2502.19649,prior survey,search-result title and summary checked,full text pending
+zo-primer,A Primer on Zeroth-Order Optimization in Signal Processing and Machine Learning,https://arxiv.org/abs/2006.06224,zeroth order,primary-source search summary checked,full text and original methods pending
+nas-survey,Neural Architecture Search: A Survey,https://jmlr.org/papers/v20/18-598.html,NAS prior survey,publisher search metadata checked,full-text taxonomy comparison pending
+actionable-mi,"Locate, steer, and improve: A practical survey of actionable mechanistic interpretability in large language models",https://www.sciencedirect.com/science/article/pii/S157401372600119X,prior survey,publisher search summary checked,full-text overlap coding pending
+ke-survey,A Survey on Knowledge Editing of Neural Networks,https://arxiv.org/abs/2310.19704,editing boundary,abstract metadata checked,full-text relevance screening pending
