@@ -1,5 +1,7 @@
 # Proposed outline and page budget
 
+**Delivery update (2026-11-09):** the current user-requested artifact is a [one-page Chinese survey](../manuscript/survey-one-page-zh.pdf). The 28-page outline below is retained as the earlier long-form expansion plan, rather than the page target for this delivery.
+
 ## Scope clarification (2026-11-08)
 
 Use **weight-space programming** as the user-specified term. Primary anchors: Exploring Weight-Space Programming (https://arxiv.org/abs/2611.09382), Sparks of Weight-Space Programming (https://rikiyat.github.io/blog/weight-space-programming/), and **SteerAct** (https://arxiv.org/abs/2610.25632). SteerScope is supplementary evaluation literature. Zeroth-order optimization, NAS, embodied coverage, 20–30 pages, and GitHub remain confirmed. The cross-space taxonomy below is an analytical proposal, not a new field name or an author-approved final title.

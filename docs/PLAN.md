@@ -1,5 +1,9 @@
 # Literature and delivery plan
 
+## Current delivery update (2026-11-09)
+
+The user requested a **one-page Chinese survey** and upload to this repository. This format supersedes the earlier long-form page budget for the current delivery. See [the PDF](../manuscript/survey-one-page-zh.pdf) and [editable Chinese text](../manuscript/survey-one-page-zh.md). The technical scope is unchanged. The protocol below remains useful for future expansion.
+
 ## Scope clarification (2026-11-08)
 
 Use **weight-space programming** as the user-specified term. Primary anchors: Exploring Weight-Space Programming (https://arxiv.org/abs/2611.09382), Sparks of Weight-Space Programming (https://rikiyat.github.io/blog/weight-space-programming/), and **SteerAct** (https://arxiv.org/abs/2610.25632). SteerScope is supplementary evaluation literature. Zeroth-order optimization, NAS, embodied coverage, 20–30 pages, and GitHub remain confirmed. The cross-space taxonomy below is an analytical proposal, not a new field name or an author-approved final title.
@@ -36,4 +40,4 @@ Prepare a dedicated repository, never publish the parent workspace. Proposed con
 - References, claims and tables have been checked; limitations and incomparable metrics are explicit.
 - GitHub remote exists and files are verified there; report the exact URL and version.
 
-Current state: scope and outline prepared; seed sources collected; no manuscript or experiments yet. Initial planning files are prepared for the authorized public GitHub repository.
+Current state (2026-11-09): the one-page Chinese survey is prepared with a five-direction comparison, three anchor-evidence summaries, and eight linked representative sources. The PDF was checked for exactly one page, Chinese glyphs, layout, and citation consistency. Editable JSON/Markdown and the PDF builder accompany it. No new experiments were conducted; no exhaustive systematic-review or verified novelty claim is made.

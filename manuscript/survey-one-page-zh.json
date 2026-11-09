@@ -1,0 +1,34 @@
+{
+  "title": "权重空间编程：方法、证据与研究边界",
+  "subtitle": "单页中文综述 · 零阶优化 / 表征引导 / 架构搜索 / 具身控制",
+  "date": "2026-11-09",
+  "intro": "权重空间编程（WSP）让通用推理模型根据任务描述，检查、构造或直接修改神经网络权重[1,2]。它与零阶优化、表征引导和神经架构搜索（NAS）的联系，可沿“修改对象、提议机制、信息访问、评估协议”四个维度理解；同一种方法可以同时属于多个类别。",
+  "table_title": "方法版图：把“改哪里”与“怎样改”分开",
+  "headers": ["方向", "对象与主要机制", "适用价值与关键边界"],
+  "rows": [
+    ["权重空间编程", "权重 / 编辑程序；LLM 根据诊断提出结构化修改[1,2]。", "适合探索局部修复；编辑稀疏不等于搜索便宜，也不保证其他能力不退化。"],
+    ["零阶优化", "权重或低维适配参数；通过函数值扰动估计更新，如 MeZO[3]。", "梯度不可用或反向传播内存受限时有价值；效果受维度、噪声和查询预算影响。"],
+    ["表征引导", "隐藏激活；CAA 等方法从对比样本构造方向，在推理时施加干预[4]。", "可按请求控制行为；需同时选择层、位置和强度，并检查目标效果与副作用。"],
+    ["架构搜索", "计算图；用梯度松弛、进化或控制器搜索，DARTS 是梯度型实例[5,8]。", "结构提议与性能估计应分开；候选训练、代理评分和最终重训均需计入成本。"],
+    ["具身时序引导", "动作模型的特征及在线控制规则；根据执行历史调整干预[6]。", "时机与方向同样重要；应按完整轨迹评估成功、时延、泛化和失败恢复。"]
+  ],
+  "evidence_title": "代表性证据：局部有效性与稳定发现能力有区别",
+  "evidence": [
+    {"label": "WSP", "text": "Exploring WSP 的一个 Qwen3.5-0.8B 数学编辑案例仅改动 1,023 个参数，留出集 MATH-500 准确率由 8.35% 升至 37.80%（+29.45 个百分点）；但 16 条搜索轨迹中有 6 条最终保留原权重[2]。这说明成功案例与可重复的发现过程需要分别评估。"},
+    {"label": "SteerAct", "text": "通过预训练稀疏自编码器及每任务默认 24 条带结果标签的仿真参考轨迹，选择任务特征，并依据时序参考决定何时、以多大强度干预[6]。主模型冻结仍伴随辅助模型与参考数据的准备成本。"},
+    {"label": "SteerScope", "text": "在两个 Gemma-2 模型规模的匹配评估及默认聚合下，所测激活引导方法未能在不增加综合副作用的同时超过 Prompt Steering[7]。因此应保留提示词基线，并报告完整的效果与副作用权衡；该结论限于其测试设置。"}
+  ],
+  "synthesis_title": "综合判断与下一步",
+  "synthesis": "WSP 是模型适配中值得研究的新交互方式，其优势应通过匹配信息访问、编辑空间和总预算的实验验证。比较时分别统计准备、搜索、部署和独立验证成本，保留未修改模型与失败轨迹，检查跨任务退化和分布外表现。优先研究：推理式提议是否优于同空间的简单搜索，激活控制能否可靠转化为权重编辑，以及时序反馈何时带来超过其成本的收益。已有综述已覆盖多种分类框架[8]，本页不主张“首次统一”。",
+  "references": [
+    {"n":1,"short":"Takehi 等，Sparks of WSP（2026，作者博客）","title":"Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights","url":"https://rikiyat.github.io/blog/weight-space-programming/"},
+    {"n":2,"short":"Hu 等，Exploring WSP（2026） · 2611.09382v1","title":"Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations","url":"https://arxiv.org/abs/2611.09382v1"},
+    {"n":3,"short":"Malladi 等，MeZO（2023） · 2305.17333v3","title":"Fine-Tuning Language Models with Just Forward Passes","url":"https://arxiv.org/abs/2305.17333v3"},
+    {"n":4,"short":"Panickssery 等，CAA（2023） · 2312.06681v4","title":"Steering Llama 2 via Contrastive Activation Addition","url":"https://arxiv.org/abs/2312.06681v4"},
+    {"n":5,"short":"Liu 等，DARTS（2018） · 1806.09055v2","title":"DARTS: Differentiable Architecture Search","url":"https://arxiv.org/abs/1806.09055v2"},
+    {"n":6,"short":"Zhou 等，SteerAct（2026） · 2610.25632v1","title":"SteerAct: Unlocking Action Models through Few-Shot Temporal Steering","url":"https://arxiv.org/abs/2610.25632v1"},
+    {"n":7,"short":"Yang 等，SteerScope（2026） · 2610.07722v1","title":"Does Steering Break Your Model? A Multi-Dimensional Evaluation Suite for LLM Steering Methods","url":"https://arxiv.org/abs/2610.07722v1"},
+    {"n":8,"short":"Elsken 等，Neural Architecture Search: A Survey（2019）","title":"Neural Architecture Search: A Survey","url":"https://jmlr.org/papers/v20/18-598.html"}
+  ],
+  "note":"基于既有 47 项文献综述压缩，本页列出 8 项代表来源（可点击）。文献截止 2026-11-09；叙述性综述，未开展新实验。AI 辅助整理。"
+}

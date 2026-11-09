@@ -1,12 +1,14 @@
 # Weight-Space Programming — Survey Project
 
-Status: scope confirmed; planning and seed literature only. This repository does not yet contain a completed survey or verified novelty claim.
+当前交付（2026-11-09）：**一页中文综述**，覆盖权重空间编程、零阶优化、表征引导、NAS 与具身控制，包含方法对照、关键证据和 8 项代表文献。基于已有文献归纳，未开展新实验，不主张未经验证的创新优先权。
+
+**[阅读单页中文 PDF](manuscript/survey-one-page-zh.pdf)** · **[在线阅读中文文本](manuscript/survey-one-page-zh.md)**
 
 Project name: **weight-space-programming-survey**. Final manuscript title remains undecided; coverage includes weight-space programming, zeroth-order optimization, steering, and NAS.
 
 ## Confirmed scope
 
-On 2026-11-08 the authors confirmed coverage of weight-space programming, zeroth-order optimization, steering, and neural architecture search (NAS), with embodied/robotics examples retained. The target is a 20–30 page survey hosted on GitHub.
+On 2026-11-08 the authors confirmed coverage of weight-space programming, zeroth-order optimization, steering, and neural architecture search (NAS), with embodied/robotics examples retained. The original long-form target was a 20–30 page survey. On 2026-11-09 the user requested the current delivery as a one-page Chinese survey uploaded to this repository; the subject coverage remains unchanged.
 
 The user clarified that the intended term is **weight-space programming**, not the assistant-created umbrella “neural-model-programming”. The prior name was a local project label and is withdrawn.
 
@@ -26,6 +28,10 @@ Language and embodied models are application domains, not additional optimizatio
 
 ## Project files
 
+- [One-page Chinese survey PDF](manuscript/survey-one-page-zh.pdf)
+- [Chinese text and build instructions](manuscript/survey-one-page-zh.md)
+- [Editable content source](manuscript/survey-one-page-zh.json)
+- [PDF build script](manuscript/build_one_page_zh.py)
 - [Scope, boundaries, and candidate contributions](docs/SCOPE.md)
 - [Proposed 28-page outline](docs/OUTLINE.md)
 - [Literature protocol and execution plan](docs/PLAN.md)
@@ -33,11 +39,11 @@ Language and embodied models are application domains, not additional optimizatio
 
 ## Deliverables
 
-1. A 20–30 page manuscript with traceable references and explicit limitations.
+1. Current delivery: a one-page Chinese survey with traceable references and explicit evidence boundaries. The earlier long-form outline remains available for expansion.
 2. A curated literature matrix and a comparison against existing surveys.
 3. Editable figures/tables and, when available, manuscript sources and a compiled PDF.
 4. Versioned GitHub releases; include reproduction scripts only if experiments are actually conducted.
 
 ## Current limits
 
-The outline, English manuscript language, and page accounting are working assumptions. No venue, author list, license, or publication-readiness claim has been set. No third-party PDFs or private chat screenshots are redistributed. The user authorized a public repository at https://github.com/emecii/weight-space-programming-survey on 2026-11-08.
+The 28-page English outline is an earlier expansion plan; the current requested artifact is the one-page Chinese PDF linked above. No venue, author list, license, or publication-readiness claim has been set. No third-party PDFs or private chat screenshots are redistributed. The user authorized this public repository on 2026-11-08 and requested upload of the Chinese one-page version on 2026-11-09.
