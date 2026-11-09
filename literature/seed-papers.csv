@@ -1,5 +1,6 @@
 id,title,url,branch,verification_status,notes
 wsp,Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights,https://rikiyat.github.io/blog/weight-space-programming/,weight programming,author blog; selected text checked in conversation,early results; not a survey
+wsp-exploring,"Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations",https://arxiv.org/abs/2611.09382,weight programming; user-specified anchor,arXiv abstract and metadata verified 2026-11-08,matches screenshot; full-text extraction pending
 steeract,SteerAct: Unlocking Action Models through Few-Shot Temporal Steering,https://arxiv.org/abs/2610.25632,embodied steering,abstract and selected HTML passages checked,full method/evidence extraction pending
 steerscope,Does Steering Break Your Model? A Multi-Dimensional Evaluation Suite for LLM Steering Methods,https://arxiv.org/abs/2610.07722,steering evaluation,abstract and selected HTML passages checked,benchmark findings limited to evaluated settings
 wsl-survey,"A Survey of Weight Space Learning: Understanding, Representation, and Generation",https://arxiv.org/abs/2603.10090,prior survey,abstract metadata checked,full-text overlap coding pending

@@ -1,5 +1,9 @@
 # Literature and delivery plan
 
+## Scope clarification (2026-11-08)
+
+Use **weight-space programming** as the user-specified term. Primary anchors: Exploring Weight-Space Programming (https://arxiv.org/abs/2611.09382), Sparks of Weight-Space Programming (https://rikiyat.github.io/blog/weight-space-programming/), and **SteerAct** (https://arxiv.org/abs/2610.25632). SteerScope is supplementary evaluation literature. Zeroth-order optimization, NAS, embodied coverage, 20–30 pages, and GitHub remain confirmed. The cross-space taxonomy below is an analytical proposal, not a new field name or an author-approved final title.
+
 ## 1. Establish the corpus
 
 Initial search date: 2026-11-08; final search cutoff must be refreshed before release. Search primary sources through arXiv, proceedings, publisher sites and author/project repositories. Use reference and citation snowballing from the seed list. A seed list is not a systematic review.

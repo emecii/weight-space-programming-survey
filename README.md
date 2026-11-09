@@ -1,14 +1,22 @@
-# Neural Model Programming and Search — Survey Project
+# Weight-Space Programming — Survey Project
 
 Status: scope confirmed; planning and seed literature only. This repository does not yet contain a completed survey or verified novelty claim.
 
-Working title: **Programming and Searching Neural Models: A Survey of Activation Steering, Weight-Space Programming, Zeroth-Order Optimization, and Architecture Search**.
+Project name: **weight-space-programming-survey**. Final manuscript title remains undecided; coverage includes weight-space programming, zeroth-order optimization, steering, and NAS.
 
 ## Confirmed scope
 
-On 2026-11-08 the authors confirmed coverage of space programming, zeroth-order optimization, steering, and neural architecture search (NAS), with embodied/robotics examples retained. The target is a 20–30 page survey hosted on GitHub.
+On 2026-11-08 the authors confirmed coverage of weight-space programming, zeroth-order optimization, steering, and neural architecture search (NAS), with embodied/robotics examples retained. The target is a 20–30 page survey hosted on GitHub.
 
-“Space programming” is provisionally interpreted from the preceding discussion as weight-space programming and its connections to activation and architecture interventions. It is not asserted to be a universally established umbrella term.
+The user clarified that the intended term is **weight-space programming**, not the assistant-created umbrella “neural-model-programming”. The prior name was a local project label and is withdrawn.
+
+## User-specified starting works
+
+- [Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations](https://arxiv.org/abs/2611.09382) — the paper in the supplied screenshot.
+- [Sparks of Weight-Space Programming](https://rikiyat.github.io/blog/weight-space-programming/) — the original author blog discussed earlier.
+- [SteerAct: Unlocking Action Models through Few-Shot Temporal Steering](https://arxiv.org/abs/2610.25632) — the intended steering anchor, with Li Fei-Fei among the authors.
+
+SteerScope remains supporting evaluation literature, not a replacement for SteerAct. The previously confirmed zeroth-order and NAS coverage and 20–30 page/GitHub targets remain in scope.
 
 ## Proposed organizing principle
 
