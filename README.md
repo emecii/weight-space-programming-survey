@@ -2,7 +2,7 @@
 
 当前交付（2026-11-09）：**一页中文综述**，覆盖权重空间编程、零阶优化、表征引导、NAS 与具身控制，包含方法对照、关键证据和 8 项代表文献。基于已有文献归纳，未开展新实验，不主张未经验证的创新优先权。
 
-**[阅读单页中文 PDF](manuscript/survey-one-page-zh.pdf)** · **[在线阅读中文文本](manuscript/survey-one-page-zh.md)**
+**[打开单页中文 PDF 原文件](https://raw.githubusercontent.com/emecii/weight-space-programming-survey/main/manuscript/survey-one-page-zh.pdf)** · **[当前计划摘要](readme.txt)** · **[在线阅读中文文本](manuscript/survey-one-page-zh.md)**
 
 Project name: **weight-space-programming-survey**. Final manuscript title remains undecided; coverage includes weight-space programming, zeroth-order optimization, steering, and NAS.
 
@@ -18,7 +18,7 @@ The user clarified that the intended term is **weight-space programming**, not t
 - [Sparks of Weight-Space Programming](https://rikiyat.github.io/blog/weight-space-programming/) — the original author blog discussed earlier.
 - [SteerAct: Unlocking Action Models through Few-Shot Temporal Steering](https://arxiv.org/abs/2610.25632) — the intended steering anchor, with Li Fei-Fei among the authors.
 
-SteerScope remains supporting evaluation literature, not a replacement for SteerAct. The previously confirmed zeroth-order and NAS coverage and 20–30 page/GitHub targets remain in scope.
+SteerScope remains supporting evaluation literature, not a replacement for SteerAct. Zeroth-order optimization and NAS remain in scope. The current GitHub delivery is one page in Chinese; the earlier 20–30 page target is retained only as an expansion option.
 
 ## Proposed organizing principle
 
@@ -28,7 +28,8 @@ Language and embodied models are application domains, not additional optimizatio
 
 ## Project files
 
-- [One-page Chinese survey PDF](manuscript/survey-one-page-zh.pdf)
+- [Current plan summary in Chinese](readme.txt)
+- [One-page Chinese survey PDF — direct file](https://raw.githubusercontent.com/emecii/weight-space-programming-survey/main/manuscript/survey-one-page-zh.pdf)
 - [Chinese text and build instructions](manuscript/survey-one-page-zh.md)
 - [Editable content source](manuscript/survey-one-page-zh.json)
 - [PDF build script](manuscript/build_one_page_zh.py)
