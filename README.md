@@ -1,6 +1,6 @@
 # Weight-Space Programming — Survey Project
 
-当前交付（2026-11-09）：**一页中文综述**，覆盖权重空间编程、零阶优化、表征引导、NAS 与具身控制，包含方法对照、关键证据和 8 项代表文献。基于已有文献归纳，未开展新实验，不主张未经验证的创新优先权。
+当前交付（2026-11-09 修订）：**一页中文综述《权重空间编程：方法、成本与局限》**，覆盖权重空间编程、零阶优化、表征引导、NAS 与具身控制。新增明确的三列对照：方法与信息条件、分阶段成本、局限与适用边界；补入 MeZO 双边评估、DARTS 选择与重训开销、SteerAct 辅助模型与参考轨迹成本，保留失败和副作用证据。8 项代表来源附版本与核验记录。未开展新实验，不主张未经验证的创新优先权。
 
 **[打开单页中文 PDF 原文件](https://raw.githubusercontent.com/emecii/weight-space-programming-survey/main/manuscript/survey-one-page-zh.pdf)** · **[当前计划摘要](readme.txt)** · **[在线阅读中文文本](manuscript/survey-one-page-zh.md)**
 
@@ -33,6 +33,7 @@ Language and embodied models are application domains, not additional optimizatio
 - [Chinese text and build instructions](manuscript/survey-one-page-zh.md)
 - [Editable content source](manuscript/survey-one-page-zh.json)
 - [PDF build script](manuscript/build_one_page_zh.py)
+- [Method, cost and limitation evidence ledger](literature/one-page-evidence.csv)
 - [Scope, boundaries, and candidate contributions](docs/SCOPE.md)
 - [Proposed 28-page outline](docs/OUTLINE.md)
 - [Literature protocol and execution plan](docs/PLAN.md)

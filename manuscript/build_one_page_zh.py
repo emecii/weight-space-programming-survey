@@ -27,12 +27,12 @@ navy=colors.HexColor('#15364B');teal=colors.HexColor('#146C78');muted=colors.Hex
 pw,ph=A4;margin=35;width=pw-2*margin
 styles={
  'title':ParagraphStyle('title',fontName='CN-Bold',fontSize=19.5,leading=27,textColor=navy,spaceAfter=5,wordWrap='CJK'),
- 'sub':ParagraphStyle('sub',fontName='CN',fontSize=8.7,leading=13,textColor=teal,spaceAfter=10,wordWrap='CJK'),
- 'body':ParagraphStyle('body',fontName='CN',fontSize=9.0,leading=14.0,spaceAfter=6.5,wordWrap='CJK'),
+ 'sub':ParagraphStyle('sub',fontName='CN',fontSize=8.7,leading=13,textColor=teal,spaceAfter=8,wordWrap='CJK'),
+ 'body':ParagraphStyle('body',fontName='CN',fontSize=9.4,leading=14.8,spaceAfter=5,wordWrap='CJK'),
  'head':ParagraphStyle('head',fontName='CN-Bold',fontSize=10.3,leading=15.5,textColor=navy,spaceBefore=7,spaceAfter=5,keepWithNext=True,wordWrap='CJK'),
- 'cell':ParagraphStyle('cell',fontName='CN',fontSize=8.4,leading=12.2,wordWrap='CJK'),
- 'th':ParagraphStyle('th',fontName='CN-Bold',fontSize=8.4,leading=12,textColor=colors.white,wordWrap='CJK'),
- 'refs':ParagraphStyle('refs',fontName='CN',fontSize=7.2,leading=10.5,wordWrap='CJK'),
+ 'cell':ParagraphStyle('cell',fontName='CN',fontSize=9.2,leading=13.8,wordWrap='CJK'),
+ 'th':ParagraphStyle('th',fontName='CN-Bold',fontSize=9.2,leading=13.8,textColor=colors.white,wordWrap='CJK'),
+ 'refs':ParagraphStyle('refs',fontName='CN',fontSize=7.8,leading=11.7,wordWrap='CJK'),
  'note':ParagraphStyle('note',fontName='CN',fontSize=6.9,leading=10,textColor=muted,spaceBefore=4,wordWrap='CJK')
 }
 seen=set()
@@ -46,7 +46,7 @@ def P(s,style='body'):return Paragraph(markup(s),styles[style])
 
 story=[P(data['title'],'title'),P(data['subtitle'],'sub'),P(data['intro']),P(data['table_title'],'head')]
 rows=[[P(s,'th') for s in data['headers']]]+[[P(s,'cell') for s in r] for r in data['rows']]
-table=Table(rows,colWidths=[width*.15,width*.40,width*.45],hAlign='LEFT')
+table=Table(rows,colWidths=[width*.30,width*.35,width*.35],hAlign='LEFT')
 table.setStyle(TableStyle([('BACKGROUND',(0,0),(-1,0),navy),('ROWBACKGROUNDS',(0,1),(-1,-1),[light,colors.white]),('VALIGN',(0,0),(-1,-1),'TOP'),('LEFTPADDING',(0,0),(-1,-1),7),('RIGHTPADDING',(0,0),(-1,-1),7),('TOPPADDING',(0,0),(-1,-1),5),('BOTTOMPADDING',(0,0),(-1,-1),5),('LINEBELOW',(0,-1),(-1,-1),.5,rule)]))
 story+=[table,P(data['evidence_title'],'head')]
 for entry in data['evidence']:
@@ -68,7 +68,7 @@ def footer(c,doc):
     c.setFont('CN',7);c.setFillColor(muted);c.drawString(margin,15,'Weight-Space Programming Survey · '+data['date']);c.drawRightString(pw-margin,15,str(doc.page));c.restoreState()
 
 args.output.parent.mkdir(parents=True,exist_ok=True)
-doc=SimpleDocTemplate(str(args.output),pagesize=A4,leftMargin=margin,rightMargin=margin,topMargin=29,bottomMargin=35,title=data['title'],author='',subject='单页中文综述：WSP、零阶优化、表征引导、NAS与具身控制')
+doc=SimpleDocTemplate(str(args.output),pagesize=A4,leftMargin=margin,rightMargin=margin,topMargin=29,bottomMargin=35,title=data['title'],author='',subject='单页中文综述：WSP、零阶优化、表征引导、NAS与具身控制的方法、成本及局限')
 doc.build(story,onFirstPage=footer,onLaterPages=footer)
 reader=PdfReader(args.output)
 assert len(reader.pages)==1,f'Expected exactly one page, got {len(reader.pages)}'
@@ -81,5 +81,5 @@ md+=['','## '+data['evidence_title'],'']
 md+=['**'+e['label']+'**　'+e['text']+'\n' for e in data['evidence']]
 md+=['## '+data['synthesis_title'],'',data['synthesis'],'','## 代表文献','']
 md += [f'[{r["n"]}] [{r["short"]}]({r["url"]})。*{r["title"]}*。' for r in data['references']]
-md+=['',data['note'],'','## 重建 PDF','','编辑同目录 `survey-one-page-zh.json`，安装 `reportlab` 和 `pypdf` 后运行：','','```shell','python build_one_page_zh.py','```','','脚本默认使用 Windows 微软雅黑；其他系统可用 `--font` 与 `--bold-font` 指定支持中文的 TrueType 字体。']
+md+=['',data['note'],'','[方法、成本与局限的来源核验表](../literature/one-page-evidence.csv)记录版本、章节位置及解释边界。','','## 重建 PDF','','编辑同目录 `survey-one-page-zh.json`，安装 `reportlab` 和 `pypdf` 后运行：','','```shell','python build_one_page_zh.py','```','','脚本默认使用 Windows 微软雅黑；其他系统可用 `--font` 与 `--bold-font` 指定支持中文的 TrueType 字体。']
 (ROOT/'survey-one-page-zh.md').write_text('\n'.join(md)+'\n',encoding='utf-8')

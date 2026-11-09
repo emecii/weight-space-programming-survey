@@ -2,7 +2,7 @@
 
 ## Current delivery update (2026-11-09)
 
-The user requested a **one-page Chinese survey** and upload to this repository. This format supersedes the earlier long-form page budget for the current delivery. See [the PDF](../manuscript/survey-one-page-zh.pdf) and [editable Chinese text](../manuscript/survey-one-page-zh.md). The technical scope is unchanged. The protocol below remains useful for future expansion.
+The user requested a **one-page Chinese survey** and upload to this repository. This format supersedes the earlier long-form page budget for the current delivery. See [the direct PDF](https://raw.githubusercontent.com/emecii/weight-space-programming-survey/main/manuscript/survey-one-page-zh.pdf) and [editable Chinese text](../manuscript/survey-one-page-zh.md). The current revision strengthens the method/access, staged-cost, and limitation comparison, with source locators in [the evidence ledger](../literature/one-page-evidence.csv). The technical scope is unchanged. The protocol below remains useful for future expansion.
 
 ## Scope clarification (2026-11-08)
 
@@ -32,7 +32,15 @@ Use the outline as a provisional budget. Verify references and claim support, ch
 
 Prepare a dedicated repository, never publish the parent workspace. Proposed contents: README, scope/outline/protocol, curated bibliography/matrix, manuscript sources, editable figures, compiled PDF when available. Publish only project-owned content and links to third-party sources. Repository destination: `emecii/weight-space-programming-survey`, public, authorized 2026-11-08. Do not assign authors, a license, or an affiliation without an author decision.
 
-## Completion criteria
+## Current one-page completion criteria
+
+- Exactly one Chinese page, with legible embedded fonts and checked layout.
+- All four agreed areas and embodied work appear in the method/cost/limitation comparison.
+- Numerical claims have versioned primary sources and bounded interpretation; reported results are separated from our synthesis.
+- JSON, Markdown, builder, compiled PDF, and evidence ledger are synchronized and verified on GitHub.
+- No new experiments or exhaustive-review/novelty claims are implied.
+
+## Earlier long-form completion criteria (expansion only)
 
 - Actual compiled manuscript is within the agreed 20–30 page convention.
 - All four agreed areas and embodied work have substantive, source-supported coverage.
@@ -40,4 +48,4 @@ Prepare a dedicated repository, never publish the parent workspace. Proposed con
 - References, claims and tables have been checked; limitations and incomparable metrics are explicit.
 - GitHub remote exists and files are verified there; report the exact URL and version.
 
-Current state (2026-11-09): the one-page Chinese survey is prepared with a five-direction comparison, three anchor-evidence summaries, and eight linked representative sources. The PDF was checked for exactly one page, Chinese glyphs, layout, and citation consistency. Editable JSON/Markdown and the PDF builder accompany it. No new experiments were conducted; no exhaustive systematic-review or verified novelty claim is made.
+Current state (2026-11-09 revision): the one-page Chinese survey compares five directions across method/access, main costs, and limitations. It specifies MeZO's basic two-evaluation update, DARTS selection/retraining costs, and SteerAct preparation/online costs; retains WSP search failures and steering side-effect evidence; and proposes separate preparation, search, deployment, and validation accounting. Eight source records include version, locator, and interpretation limits. The PDF was checked for exactly one page, Chinese glyphs, layout, and citation consistency. Editable JSON/Markdown and the builder accompany it. No new experiments were conducted; no exhaustive systematic-review or verified novelty claim is made.
