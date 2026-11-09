@@ -1,51 +1,42 @@
-# Weight-Space Programming — Survey Project
+# Weight-Space Programming Survey
 
-当前交付（2026-11-09 修订）：**一页中文综述《权重空间编程：方法、成本与局限》**，覆盖权重空间编程、零阶优化、表征引导、NAS 与具身控制。新增明确的三列对照：方法与信息条件、分阶段成本、局限与适用边界；补入 MeZO 双边评估、DARTS 选择与重训开销、SteerAct 辅助模型与参考轨迹成本，保留失败和副作用证据。8 项代表来源附版本与核验记录。未开展新实验，不主张未经验证的创新优先权。
+当前交付：**《权重空间编程：方法、成本与局限》20 页中文综述，纳入 200 篇去重论文／预印本**（2026-11-09）。正文 15 页，参考文献 5 页；包含 12 张比较表、2 张原创示意图，以及逐篇中文文献笔记。重点比较方法原理、信息条件、准备／搜索／部署／验证成本和局限。
 
-**[打开单页中文 PDF 原文件](https://raw.githubusercontent.com/emecii/weight-space-programming-survey/main/manuscript/survey-one-page-zh.pdf)** · **[当前计划摘要](readme.txt)** · **[在线阅读中文文本](manuscript/survey-one-page-zh.md)**
+**[直接打开 20 页 PDF](https://raw.githubusercontent.com/emecii/weight-space-programming-survey/main/manuscript/survey-zh-200.pdf)** · **[200 篇文献及逐篇笔记](literature/corpus-200.csv)** · **[当前计划摘要](readme.txt)**
 
-Project name: **weight-space-programming-survey**. Final manuscript title remains undecided; coverage includes weight-space programming, zeroth-order optimization, steering, and NAS.
+## 范围与结构
 
-## Confirmed scope
+用户指定的主题为 **weight-space programming**，覆盖权重空间学习、知识编辑与合并、零阶优化、表征引导、神经架构搜索，以及具身模型与闭环控制。本文按“修改哪里、如何提案、能访问什么信息、怎样验证”连接各分支，保留它们的机制差异。
 
-On 2026-11-08 the authors confirmed coverage of weight-space programming, zeroth-order optimization, steering, and neural architecture search (NAS), with embodied/robotics examples retained. The original long-form target was a 20–30 page survey. On 2026-11-09 the user requested the current delivery as a one-page Chinese survey uploaded to this repository; the subject coverage remains unchanged.
+正文依次讨论文献协议、统一描述框架、WSP、权重学习与合并、知识编辑、ZO 原理与系统成本、引导机制与副作用、NAS 与可靠比较、机器人闭环、成本账本和后续实验问题。详细页码见 [结构说明](docs/OUTLINE.md)。
 
-The user clarified that the intended term is **weight-space programming**, not the assistant-created umbrella “neural-model-programming”. The prior name was a local project label and is withdrawn.
+## 文献与证据
 
-## User-specified starting works
+本轮 16 组 arXiv 查询返回 528 条去重候选，结合 77 条种子／补检记录后得到 590 条唯一候选，按代表性和分支覆盖纳入 200 篇。分组为权重空间与编辑 50、ZO 35、表征引导 45、NAS 45、具身控制 25。
 
-- [Exploring Weight-Space Programming: Capabilities, Generalization, and Limitations](https://arxiv.org/abs/2611.09382) — the paper in the supplied screenshot.
-- [Sparks of Weight-Space Programming](https://rikiyat.github.io/blog/weight-space-programming/) — the original author blog discussed earlier.
-- [SteerAct: Unlocking Action Models through Few-Shot Temporal Steering](https://arxiv.org/abs/2610.25632) — the intended steering anchor, with Li Fei-Fei among the authors.
+**62 篇核验了全文相关章节，138 篇完成元数据及摘要筛选。**“相关章节核验”不表示逐页精读全部论文；摘要级记录只用于机制和范围定位。200 篇均有中文方法笔记、成本／局限笔记、原始链接及核验深度。本文是叙述性综述，未开展新实验，不声称穷尽检索、双人独立筛选、元分析或已验证的创新优先权。
 
-SteerScope remains supporting evaluation literature, not a replacement for SteerAct. Zeroth-order optimization and NAS remain in scope. The current GitHub delivery is one page in Chinese; the earlier 20–30 page target is retained only as an expansion option.
+- [完整文献矩阵](literature/corpus-200.csv) / [BibTeX](literature/references-200.bib) / [结构化元数据](literature/references-200.json)
+- [精确检索记录](literature/search-log.csv) / [590 条候选的选择记录](literature/screening-log.csv)
+- [关键论断、原文位置与解释边界](literature/evidence-ledger.csv)
+- [文献字段与筛选说明](literature/README.md)
 
-## Proposed organizing principle
+新近 WSP 文献中的实验、机制审计与技术猜想分别标记；不将猜想数字当作已验证结果。比较保留 WSP 搜索回退、知识编辑一致性、引导副作用、NAS 代理偏差与机器人恢复／延迟问题。
 
-Distinguish **intervention/search space** (activations, weights, architecture), **proposal/search mechanism** (statistical construction, gradient methods, zeroth-order queries, evolutionary or other search, LLM-generated proposals), **available information**, and **evaluation protocol**. These axes overlap; a method can receive multiple labels. Steering is not synonymous with zeroth-order optimization, and NAS is not necessarily gradient-free.
+## 稿件与重建
 
-Language and embodied models are application domains, not additional optimization algorithms. Prompting and ordinary fine-tuning serve as boundary comparisons and baselines rather than exhaustive survey topics.
+- [长文 PDF 原文件](https://raw.githubusercontent.com/emecii/weight-space-programming-survey/main/manuscript/survey-zh-200.pdf)
+- [可编辑中文正文](manuscript/survey-zh-200.md)
+- [PDF 构建脚本](manuscript/build_survey_zh.py) / [构建说明](manuscript/README.md)
+- [版面与引用检查记录](manuscript/survey-zh-200.qa.json)
+- [范围](docs/SCOPE.md) / [当前执行计划](docs/PLAN.md)
 
-## Project files
+前期 [单页中文摘要 PDF](https://raw.githubusercontent.com/emecii/weight-space-programming-survey/main/manuscript/survey-one-page-zh.pdf) 保留，长文是本轮主要交付。现有单页文件和证据表未被覆盖。
 
-- [Current plan summary in Chinese](readme.txt)
-- [One-page Chinese survey PDF — direct file](https://raw.githubusercontent.com/emecii/weight-space-programming-survey/main/manuscript/survey-one-page-zh.pdf)
-- [Chinese text and build instructions](manuscript/survey-one-page-zh.md)
-- [Editable content source](manuscript/survey-one-page-zh.json)
-- [PDF build script](manuscript/build_one_page_zh.py)
-- [Method, cost and limitation evidence ledger](literature/one-page-evidence.csv)
-- [Scope, boundaries, and candidate contributions](docs/SCOPE.md)
-- [Proposed 28-page outline](docs/OUTLINE.md)
-- [Literature protocol and execution plan](docs/PLAN.md)
-- [Seed literature and verification status](literature/seed-papers.csv)
+## 起始材料
 
-## Deliverables
+- [Exploring Weight-Space Programming](https://arxiv.org/abs/2611.09382v1)，本轮文献 [1]。
+- [SteerAct](https://arxiv.org/abs/2610.25632v1)，本轮文献 [176]；SteerScope 是补充评估来源。
+- [Sparks of Weight-Space Programming](https://rikiyat.github.io/blog/weight-space-programming/)，原作者博客作为背景，**不计入 200 篇学术文献**。
 
-1. Current delivery: a one-page Chinese survey with traceable references and explicit evidence boundaries. The earlier long-form outline remains available for expansion.
-2. A curated literature matrix and a comparison against existing surveys.
-3. Editable figures/tables and, when available, manuscript sources and a compiled PDF.
-4. Versioned GitHub releases; include reproduction scripts only if experiments are actually conducted.
-
-## Current limits
-
-The 28-page English outline is an earlier expansion plan; the current requested artifact is the one-page Chinese PDF linked above. No venue, author list, license, or publication-readiness claim has been set. No third-party PDFs or private chat screenshots are redistributed. The user authorized this public repository on 2026-11-08 and requested upload of the Chinese one-page version on 2026-11-09.
+仓库只发布本项目文本、脚本、自制图表、元数据和原文链接；不分发第三方论文 PDF、完整摘要、字体或私人聊天材料。作者名单、机构、投稿场所及许可证尚未指定。

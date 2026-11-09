@@ -1,0 +1,21 @@
+{
+  "date": "2026-11-09",
+  "query_count": 16,
+  "query_unique": 528,
+  "seed_records": 77,
+  "candidate_union": 590,
+  "selected": 200,
+  "groups": {
+    "权重空间与编辑": 50,
+    "零阶优化": 35,
+    "表征与激活引导": 45,
+    "神经架构搜索": 45,
+    "具身模型与闭环评估": 25
+  },
+  "depth": {
+    "全文相关章节核验": 62,
+    "摘要筛选": 138
+  },
+  "fulltext_scope": "Relevant passages/sections inspected, not all pages of all papers; no independent reproduction.",
+  "protocol": "Representative narrative survey; not exhaustive or double-screened systematic review."
+}

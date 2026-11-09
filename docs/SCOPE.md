@@ -1,48 +1,22 @@
-# Scope and contribution brief
+# 范围与边界
 
-## Scope clarification (2026-11-08)
+主标题：《权重空间编程：方法、成本与局限》。当前交付是 200 篇文献、20 页中文叙述性综述。
 
-Use **weight-space programming** as the user-specified term. Primary anchors: Exploring Weight-Space Programming (https://arxiv.org/abs/2611.09382), Sparks of Weight-Space Programming (https://rikiyat.github.io/blog/weight-space-programming/), and **SteerAct** (https://arxiv.org/abs/2610.25632). SteerScope is supplementary evaluation literature. Zeroth-order optimization, NAS, embodied coverage, 20–30 pages, and GitHub remain confirmed. The cross-space taxonomy below is an analytical proposal, not a new field name or an author-approved final title.
+## 纳入
 
-Date: 2026-11-08. Confirmed: the four subject areas, 20–30 pages, GitHub delivery, and inclusion of embodied work. The following synthesis and boundaries are proposed implementation choices.
+- 权重空间编程的阅读、构造、编辑和反馈验证。
+- 权重空间学习、超网络、生成、知识编辑与模型合并。
+- 函数值访问下的零阶／无导数方法及其内存、查询和系统成本。
+- 激活／表征引导、SAE、定位、门控和副作用评价。
+- NAS 的搜索策略、共享与预测权重、可微松弛、代理、可复现比较和 LLM 提案。
+- 具身模型中的动作接口、时序干预、泛化、延迟与失败恢复。
 
-## Central question
+提示与普通微调用作边界比较和基线，不作穷尽主题。FuXi 气象模型并非本稿核心范围。应用域不被当作优化算法；引导不等于 ZO，NAS 不一定无梯度。
 
-How do methods design or search modifications in activation, weight, and architecture spaces, and how do their information requirements, proposal mechanisms, and evaluation protocols determine what comparisons and conclusions are justified?
+## 分析承诺
 
-## Coverage
+采用干预对象、提案机制、信息权限和验证协议四轴；允许一个方法有多个标签。准备、搜索、部署与独立验证分阶段记账。跨任务数字不直接混排，方法自身报告的效果与本文推理分开。
 
-| Area | Core coverage | Boundary |
-|---|---|---|
-| Activation/representation steering | Direction, subspace, SAE features, layer/site, strength, timing, static and feedback interventions | Not every interpretability technique; include localization when it enables intervention |
-| Weight-space programming | Direct construction/editing of weights, LLM-proposed edits, relevant model-editing and weight-generation foundations | Not all pretraining, fine-tuning, merging, or weight-space learning |
-| Zeroth-order optimization | Function-evaluation-based optimization relevant to neural weights and intervention parameters; finite differences, query budgets, noise, dimension and subspace effects | Not an exhaustive survey of all numerical optimization; distinguish derivative-free families where definitions differ |
-| NAS | Search-space design, architecture proposals, evaluation, discrete/continuous search, gradient/evolutionary/LLM-guided approaches | Not all AutoML, training infrastructure, or architecture history |
-| Embodied models | Action-model steering, temporal feedback, rollout budgets, outcome and safety evaluation | Explicitly covered, not claimed comparable to language benchmarks on a shared score |
+已有综述的重叠依据相关原文而非题名推断。WSP 技术猜想、机制审计和实验论文分开标记。未开展新实验，未确立创新优先权；200 篇包含摘要筛选记录，不能对外表述为 200 篇全文逐页精读。
 
-## Proposed common record
-
-For each method record: intervention object; representation/parameterization; allowed changes; information access (weights, activations, gradients, objective values, trajectories); proposal mechanism; objective/proxy; constraints; offline preparation; online policy; evaluation budget; baseline; held-out protocol; side effects; transfer; implementation availability; evidence status.
-
-Access and use must be separated: a white-box model can be optimized without gradients. Frozen backbone does not mean no auxiliary training. A fixed steering vector need not be the result of optimization. LLM-proposed edits can use rich internal diagnostics and need not be scalar-oracle zeroth-order optimization.
-
-## Candidate contributions — not established novelty
-
-1. An operational cross-domain taxonomy with explicit information access and decision timing, beyond placing four literatures next to each other.
-2. A budget/evidence comparison separating search, auxiliary training, inference, and final validation costs. A tool call, full sequence generation, forward pass, rollout, and architecture-training run are different units.
-3. A synthesis of when target gains coexist with regressions, and which transfer or reliability claims are actually supported.
-
-Each candidate must be checked against existing representation-engineering, actionable-interpretability, weight-space-learning, zeroth-order, and NAS surveys. Search space / strategy / evaluation is already a NAS taxonomy and cannot itself be claimed as new.
-
-## Falsification checks for the survey contribution
-
-- If existing surveys already provide the same synthesis, revise the contribution rather than relabel it.
-- If common metrics do not exist, compare protocols and assumptions, not raw scores.
-- If the new weight-space-programming corpus is small, present it as an emerging bridge with appropriately limited conclusions.
-- If the corpus cannot sustain a claimed trend, mark a hypothesis or evidence gap.
-
-## Decisions still open
-
-Final title; venue/template; author list; whether 20–30 pages includes references; whether optional experiments materially improve the survey. No new experiment is mandatory at this stage.
-
-Repository decision: public, `emecii/weight-space-programming-survey`, authorized by the user on 2026-11-08.
+作者名单、机构、投稿目标与许可证尚未指定。公开材料限于项目自有文本、脚本、原创图表、文献元数据和原文链接。

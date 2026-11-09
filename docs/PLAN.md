@@ -1,51 +1,28 @@
-# Literature and delivery plan
+# 当前执行计划（2026-11-09）
 
-## Current delivery update (2026-11-09)
+最新用户要求为“调研 200 篇文献，写到大概 20 页”，并沿用上传原 GitHub 仓库的授权。该要求取代本轮交付的单页限制；单页摘要保留。
 
-The user requested a **one-page Chinese survey** and upload to this repository. This format supersedes the earlier long-form page budget for the current delivery. See [the direct PDF](https://raw.githubusercontent.com/emecii/weight-space-programming-survey/main/manuscript/survey-one-page-zh.pdf) and [editable Chinese text](../manuscript/survey-one-page-zh.md). The current revision strengthens the method/access, staged-cost, and limitation comparison, with source locators in [the evidence ledger](../literature/one-page-evidence.csv). The technical scope is unchanged. The protocol below remains useful for future expansion.
+## 已完成
 
-## Scope clarification (2026-11-08)
+1. 16 组 arXiv 查询与定向补检，590 条去重候选中选择 200 篇。
+2. 200 篇元数据、逐篇中文机制和成本／局限笔记；62 篇全文相关章节核验，138 篇摘要筛选。
+3. 15 页中文正文与 5 页参考文献，12 张比较表、2 张原创示意图。
+4. 四轴方法描述，WSP／ZO／表征引导／NAS／具身控制的机制、成本与局限比较。
+5. 关键数字与范围核验，保留失败和相反证据；区分实测、机制审计与技术猜想。
+6. PDF 页数、字体、页边界、200 条参考文献和原始链接检查，逐页渲染核验。
+7. 准备公开 PDF、Markdown、构建脚本、文献矩阵、BibTeX、检索与筛选记录及证据表。
 
-Use **weight-space programming** as the user-specified term. Primary anchors: Exploring Weight-Space Programming (https://arxiv.org/abs/2611.09382), Sparks of Weight-Space Programming (https://rikiyat.github.io/blog/weight-space-programming/), and **SteerAct** (https://arxiv.org/abs/2610.25632). SteerScope is supplementary evaluation literature. Zeroth-order optimization, NAS, embodied coverage, 20–30 pages, and GitHub remain confirmed. The cross-space taxonomy below is an analytical proposal, not a new field name or an author-approved final title.
+## 文献协议及局限
 
-## 1. Establish the corpus
+查询字段、排序和上限见 [search-log.csv](../literature/search-log.csv)。按 arXiv 标识符合并版本，核对题名及主题；所有选入记录无重复标识符及标准化题名。种子中的错误标识符和明确声明为自动生成演示的非实质“综述”被排除，其余未选记录不表示研究质量不合格。
 
-Initial search date: 2026-11-08; final search cutoff must be refreshed before release. Search primary sources through arXiv, proceedings, publisher sites and author/project repositories. Use reference and citation snowballing from the seed list. A seed list is not a systematic review.
+这是以代表性和分支覆盖为目标的叙述性综述，不是数据库穷尽式系统综述。没有双人独立筛选、质量量表或元分析。全文相关章节核验不表示逐页精读全部内容；摘要级记录不用于未经核验的细粒度性能汇总。
 
-Query families: weight-space programming; direct neural weight editing; neural weight generation; activation/representation steering; adaptive/temporal steering; sparse-autoencoder intervention; zeroth-order neural optimization; derivative-free model adaptation; neural architecture search; differentiable/evolutionary/LLM-guided NAS; embodied/action-model steering.
+## 后续可执行工作
 
-Log database, exact query, date, returned candidates, screening decisions and reasons. Deduplicate preprint/conference versions; record which version supports each claim. Include older foundational papers and current works. Select for methodological relevance, not solely citation count or positive results.
+- 根据反馈调整重心；优先把影响主要结论的摘要级记录升级为相关全文核验。
+- 保持信息权限、数据和成本单位明确；首次成本与已有资产下的增量成本分别报告。
+- 需要实验时，从正文第 15 节选择一个明确问题，预先给定预算、失败定义和停机规则。
+- 后续修订继续同步源码、文献状态和 PDF，保留 GitHub 版本记录。
 
-## 2. Establish contribution relative to existing reviews
-
-Read full texts of the seed surveys. Code each review's scope, taxonomy, information access, cost accounting, embodied coverage, side-effect evaluation and search cutoff with section locators. Do not infer absence from titles or abstracts. The present seed records do not constitute this comparison.
-
-## 3. Extract and challenge the taxonomy
-
-Classify representative original methods from every branch. Record multi-label cases and failures of classification. Extract claims, limitations, baselines and preparation costs. Keep reported results separate from our interpretation. Include contradictory or negative findings. Expand the corpus where a proposed connection has insufficient evidence.
-
-## 4. Write and verify
-
-Use the outline as a provisional budget. Verify references and claim support, check that methods and costs are compared under compatible assumptions, and retain unsupported gaps explicitly. Obtain author decisions on final framing/outline before full manuscript drafting under the academic-research-suite workflow. Optional small experiments require a concrete unresolved comparison, an agreed budget and a protocol; no fabricated results or mandatory benchmark expansion.
-
-## 5. GitHub delivery
-
-Prepare a dedicated repository, never publish the parent workspace. Proposed contents: README, scope/outline/protocol, curated bibliography/matrix, manuscript sources, editable figures, compiled PDF when available. Publish only project-owned content and links to third-party sources. Repository destination: `emecii/weight-space-programming-survey`, public, authorized 2026-11-08. Do not assign authors, a license, or an affiliation without an author decision.
-
-## Current one-page completion criteria
-
-- Exactly one Chinese page, with legible embedded fonts and checked layout.
-- All four agreed areas and embodied work appear in the method/cost/limitation comparison.
-- Numerical claims have versioned primary sources and bounded interpretation; reported results are separated from our synthesis.
-- JSON, Markdown, builder, compiled PDF, and evidence ledger are synchronized and verified on GitHub.
-- No new experiments or exhaustive-review/novelty claims are implied.
-
-## Earlier long-form completion criteria (expansion only)
-
-- Actual compiled manuscript is within the agreed 20–30 page convention.
-- All four agreed areas and embodied work have substantive, source-supported coverage.
-- Novelty statement is backed by a full-text comparison against prior surveys.
-- References, claims and tables have been checked; limitations and incomparable metrics are explicit.
-- GitHub remote exists and files are verified there; report the exact URL and version.
-
-Current state (2026-11-09 revision): the one-page Chinese survey compares five directions across method/access, main costs, and limitations. It specifies MeZO's basic two-evaluation update, DARTS selection/retraining costs, and SteerAct preparation/online costs; retains WSP search failures and steering side-effect evidence; and proposes separate preparation, search, deployment, and validation accounting. Eight source records include version, locator, and interpretation limits. The PDF was checked for exactly one page, Chinese glyphs, layout, and citation consistency. Editable JSON/Markdown and the builder accompany it. No new experiments were conducted; no exhaustive systematic-review or verified novelty claim is made.
+本版本未开展新实验，不声称研究建议已实现或创新优先权已经验证。作者、机构、投稿场所与许可证未设定。用户已经直接要求长文撰写和上传，无需再次审批既定稿件工作。

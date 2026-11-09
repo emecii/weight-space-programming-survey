@@ -1,0 +1,62 @@
+{
+  "checked_date": "2026-11-09",
+  "pages": 20,
+  "body_pages": 15,
+  "reference_pages": 5,
+  "references": 200,
+  "reference_counts_by_page": [
+    40,
+    40,
+    40,
+    40,
+    40
+  ],
+  "unique_arxiv_ids": 200,
+  "all_reference_urls_embedded": true,
+  "body_citation_coverage": 200,
+  "original_comparison_tables": 12,
+  "original_figures": 2,
+  "all_used_fonts_embedded": true,
+  "used_fonts": [
+    "AAAAAA+MicrosoftYaHei-0",
+    "AAAAAA+MicrosoftYaHei-Bold-0",
+    "AAAAAA+TimesNewRomanPS-ItalicMT",
+    "AAAAAA+TimesNewRomanPSMT",
+    "AAAAAB+MicrosoftYaHei-0",
+    "AAAAAB+MicrosoftYaHei-Bold-0",
+    "AAAAAC+MicrosoftYaHei-0",
+    "AAAAAD+MicrosoftYaHei-0"
+  ],
+  "unexpected_out_of_bounds_characters": [],
+  "missing_glyph_markers": [],
+  "cjk_hanging_punctuation": [
+    {
+      "page": 1,
+      "character": "。",
+      "right_edge": 558.5
+    },
+    {
+      "page": 5,
+      "character": "。",
+      "right_edge": 556.42
+    },
+    {
+      "page": 7,
+      "character": "。",
+      "right_edge": 552.26
+    },
+    {
+      "page": 12,
+      "character": "、",
+      "right_edge": 559.68
+    }
+  ],
+  "evidence_depth": {
+    "全文相关章节核验": 62,
+    "摘要筛选": 138
+  },
+  "pdf_sha256": "a280d0e2d50a2f382afb034d7a61d1b9520173f6c991fe2bc73fd10872f3df19",
+  "pdf_bytes": 899334,
+  "visual_review": "All 20 pages rendered; page montages and full-size checks of formula, embodied table/diagram and bibliography; no clipping or overlap observed.",
+  "evidence_scope": "Narrative survey; relevant full-text sections for 62 papers, abstract screening for 138; no independent experiments."
+}

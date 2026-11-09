@@ -1,39 +1,22 @@
-# Proposed outline and page budget
+# 当前 20 页中文稿结构
 
-**Delivery update (2026-11-09):** the current user-requested artifact is a [one-page Chinese survey](../manuscript/survey-one-page-zh.pdf). The 28-page outline below is retained as the earlier long-form expansion plan, rather than the page target for this delivery.
+| 页码 | 内容 |
+| --- | --- |
+| 1 | 标题、摘要、研究问题与文献分组 |
+| 2 | 检索筛选、证据深度、与已有综述的关系 |
+| 3 | 干预对象、提案机制、信息权限与局部转换关系 |
+| 4 | WSP 的阅读、构造、编辑及失败证据 |
+| 5 | 权重表示、生成、低秩适配与模型合并 |
+| 6 | 知识编辑、一致性与持续更新 |
+| 7 | ZO 估计器、子空间、方差与混合方法 |
+| 8 | ZO 显存、吞吐、服务接口和应用边界 |
+| 9 | 激活引导的方向、位置、强度和门控 |
+| 10 | SAE、因果定位、引导副作用和评价可靠性 |
+| 11 | NAS 搜索、权重共享、可微方法和硬件成本 |
+| 12 | NAS 可复现基准、代理偏差和 LLM／历史先验 |
+| 13 | 具身动作接口、时序干预及闭环失效 |
+| 14 | 分阶段成本账本、摊销与公平比较 |
+| 15 | 可证伪实验建议、证据空缺和结论边界 |
+| 16-20 | 200 条参考文献，每页 40 条，双栏 |
 
-## Scope clarification (2026-11-08)
-
-Use **weight-space programming** as the user-specified term. Primary anchors: Exploring Weight-Space Programming (https://arxiv.org/abs/2611.09382), Sparks of Weight-Space Programming (https://rikiyat.github.io/blog/weight-space-programming/), and **SteerAct** (https://arxiv.org/abs/2610.25632). SteerScope is supplementary evaluation literature. Zeroth-order optimization, NAS, embodied coverage, 20–30 pages, and GitHub remain confirmed. The cross-space taxonomy below is an analytical proposal, not a new field name or an author-approved final title.
-
-Planning target: **28 total pages**, provisionally in a two-column academic format, including references and embedded figures/tables. Actual length must be checked after typesetting. Language assumption: English manuscript, Chinese planning notes. This is an outline, not a manuscript or a venue-compliant submission.
-
-| Section | Pages | Purpose / required evidence |
-|---|---:|---|
-| 1. Introduction and review methodology | 2 | Motivation, scope, inclusion rules, survey comparison, reproducible search record |
-| 2. Spaces, information access, and intervention design | 3 | Definitions and mapping; distinguish intervention object from optimizer; foundational surveys |
-| 3. Zeroth-order and other proposal/search mechanisms | 3 | Function-value oracles, gradient estimates, query/dimension issues; distinguish adjacent search approaches |
-| 4. Activation and representation steering | 4 | Statistical/learned directions, SAE features, strength/site/time, static versus adaptive policies; SteerAct as the user-specified anchor and SteerScope as supporting evaluation evidence |
-| 5. Weight-space programming and editing | 3 | Sparks and Exploring WSP as anchors; direct edits/construction, LLM proposals, diagnostic feedback, reliability and cross-task transfer |
-| 6. Neural architecture search | 3 | Architecture spaces, discrete and differentiable strategies, evolutionary/LLM proposals, evaluation cost and proxies |
-| 7. Embodied interventions and temporal feedback | 2 | SteerAct plus further verified action-model papers; trajectory feedback, latency, success/safety, distribution shift |
-| 8. Cross-domain evidence and open problems | 3 | Costs, side effects, robustness, reproducibility; supported connections and unresolved comparisons |
-| 9. Conclusion | 0.5 | Only findings established by the literature synthesis |
-| References | 4.5 | Verified bibliography |
-| **Total** | **28** | **23.5 body + 4.5 references** |
-
-## Planned figures and tables
-
-- A map of activation, weight, and architecture intervention spaces (conceptual, no implication of universal equivalence).
-- A method-by-information/proposal/timing matrix.
-- A comparison against existing surveys, with page/section evidence for each coverage judgement.
-- A budget and evaluation-protocol table separating offline preparation, search and deployment.
-- An evidence-gap map; numerical trade-off plots only when comparable data are available.
-
-## Evidence assignment
-
-The seed CSV assigns initial sources to branches. Detailed source-to-claim mapping remains pending. All four technical branches need original papers beyond surveys. The embodied section needs sources beyond SteerAct. No section is currently ready for final prose.
-
-## Writing order
-
-Build the survey-comparison and method matrices first. Draft the taxonomy alongside classification trials, then technical sections, cross-domain synthesis, and finally introduction/abstract/conclusion. Adjust page allocation based on verified evidence rather than equal coverage quotas.
+正文有 12 张比较表和 2 张原创示意图。稿件源文件为 [survey-zh-200.md](../manuscript/survey-zh-200.md)，参考文献由 [references-200.json](../literature/references-200.json) 构建。前期 28 页英文提纲由本轮结构取代；单页中文摘要保留。
