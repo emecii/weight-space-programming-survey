@@ -1,0 +1,13 @@
+﻿check_id,corpus_number_or_analysis,manuscript_location,source_url_or_origin,locator,finding,status,required_qualification
+C01,1,§4.2; P03,https://arxiv.org/html/2611.09382v1,§2; §5 Table 3,50 次预算指成功工具请求；生成和 teacher-forced 请求各计一次。,supported,保留工具请求单位，不改称 50 样本或 50 次标量目标调用。
+C02,1,§4.1; P04/P05,https://arxiv.org/html/2611.09382v1,Table 2 and note; §3.4,"0.8B Math 为 8.35→37.80；1,023 是该轨迹改变的 BF16 值；六条轨迹保留原权重。",supported_with_scope,明确特定轨迹及存储精度；保留原权重不等于编辑器总是失败。
+C03,1,§14–15 proposed synthesis,https://arxiv.org/html/2611.09382v1,Table 2 starred rows and note,星号行的 Edited 数值是已评估但被丢弃的候选，不是最终保留模型。,important_qualification,在所有抽取与比较中分开 candidate 与 retained artifact。
+C04,176,§13.2; P08/B6,https://arxiv.org/html/2610.25632v1,"§4.1; Table 3(b,c); Algorithm 1",默认仿真为 24 条有结果标签的总参考轨迹；成功轨迹数消融是另一预算。,supported,不要称 24 条成功示范；预训练 SAE 为额外依赖。
+C05,87,§10.3; P07/B7,https://arxiv.org/html/2610.07722v1,Introduction central finding; §5.1,所测模型/方法与默认聚合下，未见更高效果且不增加综合副作用的激活方法。,supported_with_scope,不推出所有 prompting 都优于所有 steering；不同聚合和模型需另证。
+C06,52,§7.1; B3,https://arxiv.org/html/2305.17333v3,Algorithm 1; §2.1,基本更新计算同批次两侧损失并重放随机种子；实际矩阵级扰动还占临时内存。,supported_with_scope,区分基本算法存储描述与具体实现的峰值显存。
+C07,136,§11.2; B5,https://arxiv.org/html/1806.09055v2,Table 1 and caption,CIFAR-10 的 1.5/4 GPU 天是搜索；另排除了选择 1 GPU 天和最终训练 1.5 GPU 天。,supported,仅限原协议；不与现代 LLM 或机器人数字混排。
+C08,120,§3.3; §6.1,https://arxiv.org/html/2602.09870v3,§3.1; equation for rank-one edit,方向与组件输出处于共同空间；编辑形式为 lambda*u*k^T，其响应依赖组件输入。,mechanism_passage_checked,本轮只升级对 §3.1 的检查，不声称该论文全篇复核；不能说任何 activation shift 都可等价写入。
+C09,107,§2.2 novelty,https://arxiv.org/html/2502.19649v5,§6.2; Table 7,已有综述把训练权重和直接编辑作为表征控制方法。,overlap_confirmed,收缩首次统一表述；原稿未明确声称首创，无需虚构错误。
+C10,43,§2.2 novelty,https://arxiv.org/html/2603.10090v1,§5.6,已有权重空间学习综述以超网络生成候选权重连接 NAS。,overlap_confirmed,跨领域覆盖不是独占贡献。
+C11,SYN01,§14.1 cost formula,author analysis; no external result,current manuscript §14.1,阶段成本可相加只适用于同单位可加资源；峰值显存不能按阶段直接求和。,analytical_clarification,分别定义可加资源总量、峰值资源约束、端到端延迟；不得从公式推导已测收益。
+C12,SYN01,§3.3 conversion,author linear-algebra derivation,new synthesis §3.4,无偏置标量层上，对输入 1 和 2 同施加 +1，不存在单一权重增量同时精确实现。,analytical_counterexample,仅证明任意转换不成立；允许偏置或限制输入时结论不同，不冒称新定理。
