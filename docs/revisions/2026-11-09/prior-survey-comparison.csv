@@ -1,0 +1,7 @@
+﻿review_id,corpus_number,review,source_url,inspected_version,locator,verified_overlap,novelty_claim_to_avoid,proposed_increment_not_priority_claim
+S01,131,NAS survey,https://jmlr.org/papers/volume20/18-598/18-598.pdf,2019 published PDF,"§1–4; printed pp. 2, 8–10",已区分搜索空间、搜索策略与性能估计，并讨论低保真和共享权重的排名偏差。,不能把这三个分类轴或代理评估偏差作为本综述首次提出。,把候选、离散产物和部署验证的区别落实到跨领域记录。
+S02,51,ZO primer,https://arxiv.org/pdf/2006.06224,unversioned PDF accessed 2026-11-09,§II–III; Table I,按函数值查询构造估计器，明确查询数量与估计精度权衡。,不能把无梯度、函数值反馈或查询复杂度作为新的统一机制。,区分函数值与额外张量/轨迹信息，并标注不同查询单位。
+S03,43,Weight Space Learning survey,https://arxiv.org/html/2603.10090v1,v1,§§2–4 headings; §5.6 text,已有理解、表示、生成分类；§5.6 以架构条件权重生成连接 NAS。,不能声称首次连接权重生成与架构搜索。,区分可复用生成资产、当前任务提案及其验证要求。
+S04,86,Representation Engineering survey,https://arxiv.org/html/2502.17601v1,v1,§3.1.2–3.1.3,已经区分固定和动态强度、干预位置，并列举动态系数来源。,动态干预这一分类本身不是本稿贡献。,比较语言生成时序与具身环境反馈的不同验证单位。
+S05,107,RepE taxonomy survey,https://arxiv.org/html/2502.19649v5,v5,§6.2 and Table 7; §9.2,表征控制包括权重训练和直接编辑；还指出成功案例统计存在发表偏差。,不能声称首次统一激活与权重，或首次提醒失败案例缺失。,说明具体转换的输入依赖与不可转移部分，并区分候选和最终保留结果。
+S06,116,Actionable MI survey,https://arxiv.org/html/2601.14004v1,v1,§4 opening and §4.1; §5.2.2,已有定位后干预框架，并讨论参数与激活层的知识更新。,不能把定位—修改—改善链条当作新发现。,明确提案信息权限和独立接受测试，以 WSP 为分析中心。
