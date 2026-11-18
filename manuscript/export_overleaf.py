@@ -88,7 +88,7 @@ bib.append(r'\end{thebibliography}')
 \end{document}
 ''')
 (OUT/'latexmkrc').write_text("$pdf_mode = 5;\n$xelatex = 'xelatex -interaction=nonstopmode -synctex=1 %O %S';\n")
-shutil.copy(ROOT/'literature/references-200.bib',OUT/'references-200.bib')
+(OUT/'references-200.bib').write_text((ROOT/'literature/references-200.bib').read_text())
 (OUT/'README.md').write_text('''# Weight-Space Programming Survey — 中文整合稿 v2
 
 Overleaf: select XeLaTeX, main document `main.tex`, then Recompile.
