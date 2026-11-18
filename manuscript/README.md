@@ -1,6 +1,14 @@
+# Primary manuscript: English
+
+The current manuscript is `survey-en.md`; the compiled English PDF is `../overleaf/main.pdf` (30 pages). Export with `python3 manuscript/export_overleaf.py` from the repository root, then compile `overleaf/main.tex` with XeLaTeX. English QA is recorded in `survey-en.qa.json`.
+
+The Chinese files below are historical working versions; they are not the Overleaf main manuscript.
+
+---
+
 # 中文长文与重建
 
-`survey-zh-200.pdf` 为 20 页版本：正文 15 页、参考文献 5 页。正文有 12 张比较表、2 张由构建脚本绘制的矢量示意图。编号 [1]-[200] 对应 `../literature/references-200.json`。
+`survey-zh-200.pdf` 为 22 页整合版：正文 17 页、参考文献 5 页。正文有 13 张比较表、2 张由构建脚本绘制的矢量示意图。编号 [1]-[200] 对应 `../literature/references-200.json`。
 
 编辑 `survey-zh-200.md` 和相应文献 JSON，然后在仓库根目录运行：
 
@@ -19,6 +27,9 @@ python manuscript/build_survey_zh.py --font /path/CJK-Regular.ttf --bold-font /p
 
 不同字体会改变换行与分页。构建后会输出 `.build.json` 记录页数、标题页码和参考文献栏高；须重新渲染检查，不能仅以脚本运行成功作为版面验收。
 
-本版已检查 20 页、200 条唯一参考文献、对应链接、中文字体、页边界、表格和示意图。`survey-zh-200.qa.json` 记录核验结果。未开展新实验或独立复现。
+历史版曾检查 20 页、200 条唯一参考文献、对应链接、中文字体、页边界、表格和示意图。`survey-zh-200.qa.json` 记录核验结果。未开展新实验或独立复现。
 
 前期单页中文 PDF、正文与构建脚本保留，用于快速阅读与历史比较。
+
+
+2026-11-17：整合版重新构建，最新核验见 survey-zh-200.qa.json。另提供 ../overleaf/ 下的 XeLaTeX 工程；两种排版分页可不同，正文来源一致。

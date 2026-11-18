@@ -1,8 +1,8 @@
 {
-  "pages": 20,
+  "pages": 22,
   "references": 200,
   "cited": 200,
-  "reference_start_page": 16,
+  "reference_start_page": 18,
   "headings": [
     {
       "page": 1,
@@ -62,14 +62,14 @@
     },
     {
       "page": 14,
-      "title": "14 横向综合：把方法放回同一本成本账"
+      "title": "14 横向综合：信息、选择、产物与成本"
     },
     {
-      "page": 15,
+      "page": 16,
       "title": "15 可检验的研究问题与结论边界"
     }
   ],
-  "tables": 12,
+  "tables": 13,
   "figures": 2,
   "reference_column_heights": [
     642.0,

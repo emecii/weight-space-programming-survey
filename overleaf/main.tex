@@ -1,0 +1,25 @@
+% !TeX program = xelatex
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=2.2cm]{geometry}
+\usepackage{amsmath,amssymb,booktabs,longtable,array,xcolor,tikz}
+\usepackage[unicode,colorlinks=true,linkcolor=teal,citecolor=teal,urlcolor=teal]{hyperref}
+\usepackage{cite}
+\usepackage{fancyhdr}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\linespread{1.08}
+\setlength{\emergencystretch}{3em}
+\pagestyle{fancy}\fancyhf{}
+\fancyhead[L]{\small Weight-Space Programming}
+\fancyhead[R]{\small Methods, Costs, and Limitations}
+\fancyfoot[L]{\small English working draft}
+\fancyfoot[R]{\thepage}
+\setlength{\headheight}{15pt}
+\begin{document}
+\let\originalclearpage\clearpage
+\let\clearpage\relax
+\input{body}
+\let\clearpage\originalclearpage
+\clearpage
+\input{references}
+\end{document}

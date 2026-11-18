@@ -1,0 +1,15 @@
+{
+  "language": "English",
+  "pages": 30,
+  "body_and_transparency_pages": 21,
+  "reference_pages": 9,
+  "reference_count": 202,
+  "cjk_characters_in_compiled_manuscript": 0,
+  "missing_glyph_warnings": 0,
+  "overfull_box_warnings": 0,
+  "visual_review": "All 30 pages rendered and inspected in contact sheets; tables, figures, section flow and references checked.",
+  "remaining_warnings": "Three underfull bibliography paragraphs",
+  "pdf_sha256": "3fc992a7c6bfdcfcbb90b30185e505290d8543e7fa5a32814f615bbc440b1a04",
+  "scope": "Two supplemental relevant-passage source checks plus English layout and citation-ID validation; not a full-source audit. No new experiments.",
+  "all_202_citation_ids_resolved": true
+}
