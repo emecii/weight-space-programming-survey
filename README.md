@@ -1,8 +1,8 @@
 # Weight-Space Programming Survey
 
-当前交付：**《权重空间编程：方法、成本与局限》20 页中文综述，纳入 200 篇去重论文／预印本**（2026-11-09）。正文 15 页，参考文献 5 页；包含 12 张比较表、2 张原创示意图，以及逐篇中文文献笔记。重点比较方法原理、信息条件、准备／搜索／部署／验证成本和局限。
+当前交付：**《权重空间编程：方法、成本与局限》22 页中文整合稿 v2，纳入 200 篇去重论文／预印本**（2026-11-17）。正文 17 页，参考文献 5 页；包含 13 张比较表、2 张原创示意图，以及逐篇中文文献笔记。重点比较方法原理、信息条件、准备／搜索／部署／验证成本和局限。
 
-**[直接打开 20 页 PDF](https://raw.githubusercontent.com/emecii/weight-space-programming-survey/main/manuscript/survey-zh-200.pdf)** · **[200 篇文献及逐篇笔记](literature/corpus-200.csv)** · **[当前计划摘要](readme.txt)**
+**[直接打开 22 页 PDF](https://raw.githubusercontent.com/emecii/weight-space-programming-survey/main/manuscript/survey-zh-200.pdf)** · **[200 篇文献及逐篇笔记](literature/corpus-200.csv)** · **[当前计划摘要](readme.txt)**
 
 ## 范围与结构
 
@@ -40,3 +40,14 @@
 - [Sparks of Weight-Space Programming](https://rikiyat.github.io/blog/weight-space-programming/)，原作者博客作为背景，**不计入 200 篇学术文献**。
 
 仓库只发布本项目文本、脚本、自制图表、元数据和原文链接；不分发第三方论文 PDF、完整摘要、字体或私人聊天材料。作者名单、机构、投稿场所及许可证尚未指定。
+
+## 整合稿 v2 与协作
+
+- [当前进度与下一轮任务](docs/PROGRESS.md)
+- [核心方法比较表](literature/core-method-comparison.csv)
+- [11 月 17 日定向增量检索](literature/update-scan-2026-11-17.md)
+- [Overleaf / XeLaTeX 工程](overleaf/README.md)
+
+基线文献检索仍截至 11 月 9 日；新版正文整合证据与方法论修订，不代表完成全部候选论文的全文审计。
+
+Overleaf 项目：https://www.overleaf.com/project/6afd33eb5393573dd5c55652

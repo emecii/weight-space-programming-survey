@@ -35,7 +35,7 @@ pdfmetrics.registerFontFamily('Latin',normal='Latin',bold='Latin',italic='Latin-
 NAVY=colors.HexColor('#18374C'); TEAL=colors.HexColor('#12767C'); GRAY=colors.HexColor('#566672'); LIGHT=colors.HexColor('#F0F5F6'); RULE=colors.HexColor('#CCD9DD')
 PW,PH=A4; M=44; WIDTH=PW-2*M
 styles={
- 'body':ParagraphStyle('body',fontName='CN',fontSize=10.5,leading=16.9,spaceAfter=8,wordWrap='CJK',textColor=colors.HexColor('#182631')),
+ 'body':ParagraphStyle('body',fontName='CN',fontSize=10.2,leading=16,spaceAfter=6,wordWrap='CJK',textColor=colors.HexColor('#182631')),
  'title':ParagraphStyle('title',fontName='CN-Bold',fontSize=23,leading=32,spaceAfter=11,textColor=NAVY,wordWrap='CJK'),
  'h1':ParagraphStyle('h1',fontName='CN-Bold',fontSize=16,leading=23,spaceAfter=12,textColor=NAVY,wordWrap='CJK',keepWithNext=True),
  'h2':ParagraphStyle('h2',fontName='CN-Bold',fontSize=11.1,leading=17,spaceBefore=6,spaceAfter=7,textColor=TEAL,wordWrap='CJK',keepWithNext=True),
@@ -108,7 +108,7 @@ class SurveyDoc(BaseDocTemplate):
 def decorate(c,doc):
     c.saveState();c.setStrokeColor(RULE);c.setLineWidth(.5);c.line(M,PH-36,PW-M,PH-36);c.line(M,35,PW-M,35)
     c.setFont('CN',7.2);c.setFillColor(GRAY);c.drawString(M,PH-27,'权重空间编程 · 方法、成本与局限');c.drawRightString(PW-M,PH-27,'200 篇文献 · 中文综述')
-    c.drawString(M,22,'2026-11-09  |  叙述性综述 · 未开展新实验');c.drawRightString(PW-M,22,str(doc.page));c.restoreState()
+    c.drawString(M,22,'2026-11-17  |  叙述性综述 · 未开展新实验');c.drawRightString(PW-M,22,str(doc.page));c.restoreState()
 
 doc=SurveyDoc(str(args.output),pagesize=A4,leftMargin=M,rightMargin=M,topMargin=49,bottomMargin=46,
  title='权重空间编程：方法、成本与局限 - 200 篇文献中文综述',author='',subject='Weight-space programming, zeroth-order optimization, steering, NAS and embodied control',allowSplitting=1)
