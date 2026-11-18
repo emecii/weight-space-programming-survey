@@ -1,0 +1,15 @@
+{
+  "language": "English",
+  "pages": 30,
+  "body_and_transparency_pages": 20,
+  "reference_pages": 10,
+  "reference_count": 200,
+  "all_200_citation_ids_resolved": true,
+  "cjk_characters_in_compiled_manuscript": 0,
+  "missing_glyph_warnings": 0,
+  "overfull_box_warnings": 0,
+  "visual_review": "All 30 pages rendered and inspected in contact sheets; tables, figures, section flow and references checked.",
+  "remaining_warnings": "Two underfull bibliography paragraphs",
+  "pdf_sha256": "2efb6a2c3ff1de3233f9ea02dbaa873938675210f54321e8de58994378efb64c",
+  "scope": "Language conversion and layout/citation-ID validation; not a new full-source audit. No new experiments."
+}

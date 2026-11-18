@@ -1,3 +1,5 @@
+> Language update: the primary manuscript and Overleaf project are now English (30 pages, 200 references). `manuscript/survey-en.md` is the editing source. English conversion is complete; scientific evidence gaps below remain open. Chinese drafts are retained only as history.
+
 # Survey 进度（2026-11-17）
 
 ## 本轮完成
@@ -14,7 +16,7 @@
 3. 将补充证据事件合并为可追溯的当前核验状态；保留 2026-11-09 的 62/138 历史快照，不以重复检查冒充新增篇数。
 4. 完成跨空间联系的案例与反例覆盖；现有分析不声称创新优先权成立。
 5. 只有影响核心结论且文献无法回答的问题才进入最小实验；目前未启动实验。
-6. 中文结构稳定后写英文稿；目标 venue、作者次序、机构、声明与许可证由团队确定。
+6. 英文稿已完成；下一步进行论证与证据审阅。目标 venue、作者次序、机构、声明与许可证由团队确定。
 
 ## 协作约定
 

@@ -1,3 +1,11 @@
+# Primary manuscript: English
+
+The current manuscript is `survey-en.md`; the compiled English PDF is `../overleaf/main.pdf` (30 pages). Export with `python3 manuscript/export_overleaf.py` from the repository root, then compile `overleaf/main.tex` with XeLaTeX. English QA is recorded in `survey-en.qa.json`.
+
+The Chinese files below are historical working versions; they are not the Overleaf main manuscript.
+
+---
+
 # 中文长文与重建
 
 `survey-zh-200.pdf` 为 22 页整合版：正文 17 页、参考文献 5 页。正文有 13 张比较表、2 张由构建脚本绘制的矢量示意图。编号 [1]-[200] 对应 `../literature/references-200.json`。
