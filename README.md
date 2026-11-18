@@ -1,6 +1,8 @@
 # Weight-Space Programming Survey
 
-**Current manuscript: _Weight-Space Programming: Methods, Costs, and Limitations_ — an English narrative survey with a 200-paper baseline and two checked supplemental papers.** The English edition has 30 pages (21 pages of text, tables, figures, and transparency statements; 9 pages of references).
+**Active writing track: Chinese argument development before English translation.** Start with the [Chinese core draft](manuscript/survey-zh-core.md): the introduction, common problem formulation, WSP core, and cross-space reasoning have been rewritten for professor review. This is a partial rewrite, not a completed Chinese survey.
+
+**English reference edition: _Weight-Space Programming: Methods, Costs, and Limitations_ — an English narrative survey with a 200-paper baseline and two checked supplemental papers.** The English edition has 30 pages (21 pages of text, tables, figures, and transparency statements; 9 pages of references).
 
 - [Open the Overleaf project](https://www.overleaf.com/project/6afd33eb5393573dd5c55652)
 - [Read the English PDF](overleaf/main.pdf)
@@ -27,7 +29,7 @@ The November 9 baseline contains 200 selected papers from 590 unique candidates.
 - [Incremental candidate scan](literature/update-scan-2026-11-17.md)
 - [Remaining work](docs/PROGRESS.md)
 
-The supporting research notes retain their original language. The primary manuscript, tables, figures, captions, and Overleaf compilation are English. Earlier Chinese manuscripts remain as historical working artifacts.
+The supporting research notes retain their original language. The existing Overleaf compilation remains the English reference edition. The new Chinese core draft is the active reasoning and writing track; earlier Chinese full manuscripts remain historical working artifacts.
 
 ## Rebuild and collaborate
 

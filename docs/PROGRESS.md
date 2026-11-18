@@ -1,3 +1,11 @@
+## Current priority: Chinese argument rewrite
+
+Following professor feedback, develop and review the argument in Chinese before producing the next English edition. New active artifact: `manuscript/survey-zh-core.md`.
+
+Completed this round: a rewritten abstract and introduction; separation of intervention space, proposal mechanism, and delivered artifact; a WSP core distinguishing reading, construction, and repair; a worked activation-to-weight counterexample; and a problem-led full-manuscript structure. Evidence and hypothetical examples are explicitly separated.
+
+Pending: professor review of the core argument; source-backed expansion of the ZO and NAS comparisons; deeper Steer2Edit protocol checks; direct comparison against the nearest existing surveys. This is not a finished Chinese full draft or a submission-ready paper. The existing English Overleaf edition is preserved for comparison.
+
 ## English evidence update — 2026-11-17
 
 - Added Section 4.3 on rule compilation, weight reading, and information access; references 201–202 have bounded full-text passage checks.
@@ -5,7 +13,7 @@
 - Current English build: 30 pages (21 body/transparency + 9 references), 202 resolved citation IDs.
 - Next: assess iWSP and medical-imaging WSP, finish Steer2Edit protocol/cost checks, and strengthen comparison against existing surveys. No new experiments or independent replication are claimed.
 
-> Language update: the primary manuscript and Overleaf project are now English (30 pages, 200 references). `manuscript/survey-en.md` is the editing source. English conversion is complete; scientific evidence gaps below remain open. Chinese drafts are retained only as history.
+> Historical language update (superseded by the Chinese rewrite above): the first English conversion produced 30 pages and 200 references; a subsequent update added references 201–202. `manuscript/survey-en.md` remains the source for the English reference edition.
 
 # Survey 进度（2026-11-17）
 
