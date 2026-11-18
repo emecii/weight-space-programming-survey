@@ -1,5 +1,5 @@
 """Deterministic Markdown -> editable XeLaTeX export, preserving reference numbers.
-Run from any directory. No network; sources: survey-en.md and references-200.json.
+Run from any directory. No network; sources: survey-en.md, references-200.json and references-supplement.json.
 """
 from pathlib import Path
 import json,re,shutil,zipfile
@@ -55,8 +55,8 @@ while i<len(lines):
  if t.startswith('### '):body.append(r'\subsection*{'+inline(t[4:])+r'}');continue
  if t.startswith('> '):t=t[2:]
  body.append(inline(t)+'\n')
-refs=json.loads((ROOT/'literature/references-200.json').read_text())
-bib=[r'\begin{thebibliography}{200}\small']
+refs=json.loads((ROOT/'literature/references-200.json').read_text()) + json.loads((ROOT/'literature/references-supplement.json').read_text())
+bib=[r'\begin{thebibliography}{202}\footnotesize']
 for r in refs:
  title=esc(r['title']);authors=esc(', '.join(r['authors'][:6])+(', et al.' if len(r['authors'])>6 else ''));url=r['url']
  bib.append(r'\bibitem{r'+str(r['number'])+'} '+authors+'. '+r'\href{'+url+'}{'+title+'}. '+str(r['year'])+'.'+(' DOI: '+esc(r['doi'])+'.' if r.get('doi') else ''))
@@ -95,12 +95,12 @@ bib.append(r'\end{thebibliography}')
 
 Overleaf: select XeLaTeX, main document `main.tex`, then Recompile.
 
-Edit `body.tex` for manuscript text; `references.tex` preserves existing [1]–[200] numbering. `references-200.bib` is supplied for future venue conversion; the current build uses references.tex, not BibTeX.
+Edit `body.tex` for manuscript text; `references.tex` preserves baseline [1]–[200] numbering and appends [201]–[202] from references-supplement.json. `references-200.bib` is supplied for future venue conversion; the current build uses references.tex, not BibTeX.
 
-Source of truth before collaborative editing: manuscript/survey-en.md and literature/references-200.json in GitHub. Run `python3 manuscript/export_overleaf.py` to regenerate this folder. Once editing on Overleaf starts, export and reconcile those edits before regenerating; do not overwrite collaborators' changes.
+Source of truth before collaborative editing: manuscript/survey-en.md and literature/references-{200,supplement}.json in GitHub. Run `python3 manuscript/export_overleaf.py` to regenerate this folder. Once editing on Overleaf starts, export and reconcile those edits before regenerating; do not overwrite collaborators' changes.
 
 Author order, affiliations, funding, conflict-of-interest and author contribution declarations require team input. This is a narrative review with no new experiments. The baseline search date remains 2026-11-09. AI assistance was used for drafting, source cross-checking and formatting; authors must review the final text and venue-specific disclosure requirements.
 ''')
 (OUT/'README.md').write_text((OUT/'README.md').read_text()+'\nOverleaf: https://www.overleaf.com/project/6afd33eb5393573dd5c55652\n')
 assert cited <= {r['number'] for r in refs}
-print('References:',len(refs),'cited:',len(cited),'uncited:',sorted(set(range(1,201))-cited))
+print('References:',len(refs),'cited:',len(cited),'uncited:',sorted({r['number'] for r in refs}-cited))

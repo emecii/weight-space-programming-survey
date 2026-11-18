@@ -9,4 +9,8 @@
 | [Replicating and Extending Weight-Space Programming](https://arxiv.org/abs/2611.21449)，11-16 | 报告复现，并将写权重与程序编译、读权重与输入层线索相联系 | 优先全文核验独立复现及替代解释，不直接采信摘要中的普适结论 |
 | [Weight-Space Programming for Medical Imaging](https://arxiv.org/abs/2611.12066)，11-09 | 比较直接构造小型分类器与少样本训练，报告训练优势及失败案例 | 检查是否漏于基线截止时间；核验数据权限、公平对照与失败，不作临床建议 |
 
-下一步优先阅读复现与游戏编译两篇全文；确认相关性和证据后再纳入正文及参考文献，避免把摘要筛选升级为全文核验。SteerAct 的本次查询没有形成可确认的版本变更记录；不能据此声称没有更新。
+初始筛选时优先安排复现与游戏编译两篇；后续核验结果见下方更新记录。SteerAct 的本次查询没有形成可确认的版本变更记录；不能据此声称没有更新。
+
+## Full-text follow-up
+
+Relevant passages of arXiv:2611.21449v1 and arXiv:2611.16981v1 were checked on November 17 and incorporated into English Section 4.3 as supplemental references [201–202]. See `wsp-update-evidence-2026-11-17.md` for exact reading scopes and unresolved checks. The other two candidates remain abstract-screened. This update does not alter the baseline corpus or its 62/138 counts.

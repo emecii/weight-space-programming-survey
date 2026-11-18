@@ -1,6 +1,6 @@
 # Weight-Space Programming Survey
 
-**Current manuscript: _Weight-Space Programming: Methods, Costs, and Limitations_ — an English narrative survey of 200 papers and preprints.** The English edition has 30 pages (20 pages of text, tables, figures, and transparency statements; 10 pages of references).
+**Current manuscript: _Weight-Space Programming: Methods, Costs, and Limitations_ — an English narrative survey with a 200-paper baseline and two checked supplemental papers.** The English edition has 30 pages (21 pages of text, tables, figures, and transparency statements; 9 pages of references).
 
 - [Open the Overleaf project](https://www.overleaf.com/project/6afd33eb5393573dd5c55652)
 - [Read the English PDF](overleaf/main.pdf)
@@ -16,9 +16,10 @@ The synthesis distinguishes evaluated candidates from retained artifacts, identi
 
 ## Corpus and evidence
 
-The November 9 baseline contains 200 selected papers from 590 unique candidates. Relevant full-text passages were checked for 62 papers; 138 were screened through metadata and abstracts. These are bounded reading scopes, not claims of complete reading or independent replication. A supplementary 12-claim audit is recorded separately. Four candidates from the November 17 targeted scan await full-text assessment and are not included in the baseline count.
+The November 9 baseline contains 200 selected papers from 590 unique candidates. Relevant full-text passages were checked for 62 papers; 138 were screened through metadata and abstracts. These are bounded reading scopes, not claims of complete reading or independent replication. A supplementary 12-claim audit is recorded separately. Of four candidates from the November 17 targeted scan, two have now been checked at relevant full-text passages and added as references [201–202]; two await full-text assessment. The baseline count is unchanged.
 
 - [Corpus and per-paper notes](literature/corpus-200.csv)
+- [Supplemental evidence](literature/wsp-update-evidence-2026-11-17.md) and [supplemental metadata](literature/references-supplement.json)
 - [Bibliography](literature/references-200.bib) and [structured metadata](literature/references-200.json)
 - [Search log](literature/search-log.csv), [screening log](literature/screening-log.csv), and [evidence ledger](literature/evidence-ledger.csv)
 - [Core-method comparison](literature/core-method-comparison.csv)

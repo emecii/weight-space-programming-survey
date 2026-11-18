@@ -1,0 +1,37 @@
+[
+  {
+    "number": 201,
+    "key": "goworek2026replicating",
+    "title": "Replicating and Extending Weight-Space Programming: Frontier LLMs Compile Programs into Weights and Read Input Layers",
+    "authors": [
+      "Roksana Goworek",
+      "Alexander Hickey",
+      "Federico Nanni",
+      "Martin O’Reilly"
+    ],
+    "year": 2026,
+    "arxiv_id": "2611.21449",
+    "metadata_version": "v1",
+    "url": "https://arxiv.org/abs/2611.21449v1",
+    "doi": null,
+    "evidence_depth": "Relevant full-text passages checked",
+    "locator": "Sections 1, 2.1.1, 3, 7",
+    "checked_date": "2026-11-17"
+  },
+  {
+    "number": 202,
+    "key": "lehmann2026compiling",
+    "title": "Compiling Known Rules into Compact Neural Agents: Weight-Space Programming on Unseen Games",
+    "authors": [
+      "Jens Lehmann"
+    ],
+    "year": 2026,
+    "arxiv_id": "2611.16981",
+    "metadata_version": "v1",
+    "url": "https://arxiv.org/abs/2611.16981v1",
+    "doi": null,
+    "evidence_depth": "Relevant full-text passages checked",
+    "locator": "Sections 3.1–3.4, 5 (Limitations)",
+    "checked_date": "2026-11-17"
+  }
+]

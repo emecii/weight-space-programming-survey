@@ -1,3 +1,10 @@
+## English evidence update — 2026-11-17
+
+- Added Section 4.3 on rule compilation, weight reading, and information access; references 201–202 have bounded full-text passage checks.
+- Preserved the baseline 200 records and 62/138 reading-depth counts. Two targeted-scan candidates remain pending.
+- Current English build: 30 pages (21 body/transparency + 9 references), 202 resolved citation IDs.
+- Next: assess iWSP and medical-imaging WSP, finish Steer2Edit protocol/cost checks, and strengthen comparison against existing surveys. No new experiments or independent replication are claimed.
+
 > Language update: the primary manuscript and Overleaf project are now English (30 pages, 200 references). `manuscript/survey-en.md` is the editing source. English conversion is complete; scientific evidence gaps below remain open. Chinese drafts are retained only as history.
 
 # Survey 进度（2026-11-17）
